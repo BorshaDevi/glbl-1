@@ -9,7 +9,7 @@ import Login from './Login/Login.jsx';
 
 import UserList from './UserList/UserList.jsx';
 import Edit from './Edit/Edit.jsx';
-import Root from './Root/Root.JSX';
+import Root from './Root/Root.jsx';
 
 
 
