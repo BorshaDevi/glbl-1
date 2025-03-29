@@ -9,7 +9,7 @@ const UserList=()=>{
        const userData=async()=>{
         try{
             const userList= await axios.get(`https://reqres.in/api/users?page=${page}`)
-            setUserDataPage(userList)
+            setUserDataPage(userList.data)
         }catch (e){
             console.log(e)
         }
@@ -21,7 +21,9 @@ const UserList=()=>{
       <>
       <div>
          {
-            userDataPage.map
+            userDataPage.data.map((data , index) => <div key={index}> 
+
+            </div>)
          }
       </div>
       </>
