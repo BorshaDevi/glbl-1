@@ -1,3 +1,4 @@
+ <a> Live Link : https://glbl-1.vercel.app/ </a>
 
 First of all , I am sorry for late submit.Because My keyboard some keys are not working that's why I am submit lately.
 <p>  In this project , I create login authentication, a user list with pagination, and options to edit and delete users.
@@ -20,14 +21,18 @@ First of all , I am sorry for late submit.Because My keyboard some keys are not 
 <li>  HTTP Requests: Axios</li>
 <li>  Router: React Router dom</li>
 <li> Notifications:React hot Toast</li>
+<li> Host: Vercel</li>
 </ol>
 
 <h1 className='font-bold'>Installation & Setup</h1>
 
+
 git clone https://github.com/BorshaDevi/glbl-1 
+
 cd glbl-1 
 
 Then ,
+
 npm install 
 
 And ,
@@ -39,7 +44,7 @@ npm run dev
   </p>
  <p> Password: cityslicka </p>
 
- <h1 className='font-bold'>For Login</h1>
+ <h1 className='font-bold'>Assumptions & Considerations</h1>
  <p> This project does not use a real backend; Reqres API provides fake data.</p>
 
 
