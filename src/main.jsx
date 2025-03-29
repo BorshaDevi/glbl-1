@@ -7,6 +7,7 @@ import {
 } from "react-router";
 import Login from './Login/Login.jsx';
 import Root from './Root/Root.jsx';
+import UserList from './UserList/UserList.jsx';
 
 
 
@@ -18,6 +19,11 @@ const router = createBrowserRouter([
       {
         path: "/",
         Component: Login ,
+
+      },
+      {
+        path: "/userList",
+        Component: UserList ,
 
       },
     ]
