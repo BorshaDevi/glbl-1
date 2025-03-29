@@ -6,8 +6,10 @@ import {
   RouterProvider,
 } from "react-router";
 import Login from './Login/Login.jsx';
-import Root from './Root/Root.jsx';
+
 import UserList from './UserList/UserList.jsx';
+import Edit from './Edit/Edit.jsx';
+import Root from './Root/Root.JSX';
 
 
 
@@ -24,6 +26,11 @@ const router = createBrowserRouter([
       {
         path: "/userList",
         Component: UserList ,
+
+      },
+      {
+        path: "/edit/:id",
+        Component: Edit ,
 
       },
     ]
