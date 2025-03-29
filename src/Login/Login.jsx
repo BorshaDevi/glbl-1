@@ -1,7 +1,8 @@
-
+import axios from 'axios'
+import { useNavigate } from "react-router";
 
 const Login=()=>{
-    
+  const navigate=useNavigate()
     const handleForm=async(e)=>{
         e.preventDefault()
         const form=e.target
@@ -11,7 +12,18 @@ const Login=()=>{
             email,
             password
         }
-       await axi
+       try{
+        const res= await axios.post('https://reqres.in/api/login',login)
+        console.log(res)
+        if(res.status=== 200){
+            const token=res.data.token
+            localStorage.setItem('token',token )
+            navigate('/userList')
+        }
+
+       }catch(e){
+              console.log(e)
+       }
 
     }
     return (
